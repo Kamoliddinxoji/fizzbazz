@@ -2,8 +2,8 @@ package main
 
 import "fmt"
 
-func main() {
-	for i := 1; i <= 100; i++ {
+func FizzBuzz(n int) {
+	for i := 1; i <= n; i++ {
 		if i%15 == 0 {
 			fmt.Println("FizzBuzz")
 		} else if i%3 == 0 {
@@ -14,4 +14,14 @@ func main() {
 			fmt.Println(i)
 		}
 	}
+}
+
+func main() {
+	fmt.Println("Son kiriting")
+
+	var n int
+
+	fmt.Scanf("%d", &n)
+
+	FizzBuzz(n)
 }
